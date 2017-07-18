@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp1.MessageBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MessageBox" Height="300" Width="300">
+    <Grid Margin="0,0,-0.4,0.4" IsEnabled="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="183*"/>
+            <ColumnDefinition Width="39*"/>
+            <ColumnDefinition Width="71*"/>
+        </Grid.ColumnDefinitions>
+        <Ellipse Fill="Red" HorizontalAlignment="Left" Height="112" Margin="68,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="168" Grid.ColumnSpan="3"/>
+        <Label x:Name="warning" Content="Incorrect expressions due to parantheses" HorizontalAlignment="Left" Height="55" Margin="49,169,0,0" VerticalAlignment="Top" Width="187" Grid.ColumnSpan="3" IsEnabled="False"/>
+
+    </Grid>
+</Window>
